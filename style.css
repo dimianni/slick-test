@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 1600px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.parent {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.child {
+    flex-basis: 50%;
+    /* width: 500px; */
+    height: 500px;
+    background-color: #131313;
+    border: 1px solid orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slick-arrow{
+    z-index: 2;
+}
+
+.slick-prev{
+    left: 10px;
+}
+
+.slick-next{
+    right: 10px;
+}
+
+@media screen and (max-width: 1919px) {
+    .container {
+        max-width: 1170px;
+    }
+}
